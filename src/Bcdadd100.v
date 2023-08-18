@@ -8,6 +8,7 @@ module top_module(
     //bcd_fadd bcd [99:0] (a, b, {c, cin}, {cout, c}, sum);
     
     assign c[0] = cin;
+    assign cout = c[100];
     
     generate
         genvar i;
