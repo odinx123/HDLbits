@@ -4,9 +4,10 @@ module top_module(
     output cout,
     output [399:0] sum );
     
-    wire [100:0] c;
-    //bcd_fadd bcd [99:0] (a, b, {c, cin}, {cout, c}, sum);
+    // wire [99:0] c;
+    // bcd_fadd bcd [99:0] (a, b, {c, cin}, {cout, c}, sum);
     
+    wire [100:0] c;
     assign c[0] = cin;
     assign cout = c[100];
     
