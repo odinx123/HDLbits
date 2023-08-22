@@ -5,8 +5,8 @@ module top_module(
     output [3:0] out_different );
     
     assign out_any = in[3:1] | in[2:0];
-	assign out_both = in[2:0] & in[3:1];
-	assign out_different = in ^ {in[0], in[3:1]};
+    assign out_both = in[2:0] & in[3:1];
+    assign out_different = in ^ {in[0], in[3:1]};
     
     /*
     generate
