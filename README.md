@@ -7,7 +7,7 @@
 
 ### 小筆記
 
-## latch
+#### latch
 - 參考: https://ithelp.ithome.com.tw/articles/10273468
 - 在循序邏輯中（clock觸發），不完整的 if-else 並不會生成 latch，因為 register 具有儲存前態的功能，並只有在正負緣才會改變值。
 - 使變數等於自己時或是判斷元素有自己時，因為會用到變數的前態而自動生成 latch 來幫你儲存。  # 組合邏輯
@@ -16,7 +16,7 @@
 
 <br>
 
-## 撰寫可綜合電路應該要保持的幾項原則
+#### 撰寫可綜合電路應該要保持的幾項原則
 - 參考: https://ithelp.ithome.com.tw/articles/10274534
 - 所有的初始化動作都應該靠 reset 或是 reset_n 來達成，所以宣告 reg 時也不會先給初始值，那是沒有必要的。
 - 整體電路應該為同步式設計，意思是 always 內的觸發信號應當只有 clk 以及 reset 信號。
