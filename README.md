@@ -25,3 +25,10 @@
 - 不該在程式內使用 delay 語句（ex: #100）。
 - 同一個變數不可由兩個不同的 always 來賦值。 **# 要注意**
 - 同一個變數不應該由多個不同的 clk 來做觸發【也就是敏感列表變數】。
+
+<br>
+
+#### dff時序
+- 參考: https://blog.csdn.net/qq_24916381/article/details/100529409
+![image](https://github.com/odinx123/HDLbits/assets/68193880/ee9d5aa6-a478-40e7-84e6-ec9823d8923a)
+- 當clk為上升沿那一時刻，d的值還是低電平，因此q的值為低電平； 並且下降沿不會引起q值的變化，因此q值每個週期都是低電平。
