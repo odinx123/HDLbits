@@ -5,6 +5,7 @@ module top_module (
     output [2:0] c_enable
 ); //
 
+    // bcdcount從0數到9
     bcdcount counter0 (clk, reset, c_enable[0], q1);
     bcdcount counter1 (clk, reset, c_enable[1], q2);
     bcdcount counter2 (clk, reset, c_enable[2], q3);
