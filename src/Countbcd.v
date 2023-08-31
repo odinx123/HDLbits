@@ -11,16 +11,16 @@ module top_module (
 
 endmodule
 
-module bcd_cnt(clk, reset, cin, q);  // 如果把進位寫在這裡，那麼就會有clk的延遲出現部分錯誤
+module bcd_cnt(clk, reset, ena, q);  // 如果把進位寫在這裡，那麼就會有clk的延遲出現部分錯誤
     
-    input clk, reset, cin;
+    input clk, reset, ena;
     output reg [3:0] q;
     
     always @(posedge clk) begin
         if (reset) begin
         	q <= 4'd0;
         end
-        else if (cin) begin
+        else if (ena) begin
             if (q == 4'd9) begin
                 q <= 4'd0;
             end
