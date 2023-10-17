@@ -2,6 +2,7 @@
 
 ### 紀錄條件
 - 看到一些比較特殊的寫法(不知道的)會記錄下來。
+- quartus如果要有sdo檔案: Assignments/settings/More EDA Netlist Writer Settings/Generate functional simulation netlist -> off
 
 <br>
 
